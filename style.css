@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3&display=swap');
+
+:root {
+  --color-grey: #2f2b28;
+  --color-grey-lighter: #8e8b8a;
+  --color-yellow: #ffd662;
+  --color-yellow-lighter: #ffde81;
+  --color-yellow-darker: #d5b456;
+  --color-gold: #d4ad66;
+  --color-pale: #fbf6ee;
+  --fonts: "Source Sans 3", Seravek, Ubuntu, Calibri, sans-serif;
+}
+
+
+html, body {
+  font-size: 16px;
+  font-family: var(--fonts);
+}
+
+/* Basic Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Responsive Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image:
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  padding: 3.125em;
+}
+
+.logo {
+  width: 200px;
+}
+
+.reynard {
+  width: 90px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+  padding: 3.125em;
+}
+
+footer > p {
+  max-width: 400px;
+}
+
+.mailchimp-form {
+
+}
+
+.mailchimp-form > p {
+  margin-bottom: 5px;
+}
+
+.name-fields .mc-field-group {
+  width: 95%;
+}
+
+.mc-field-group {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: .5rem;
+  gap: 5%;
+}
+
+.mc-field-group label {
+  position: absolute;
+  top: .6rem;
+  left: .7rem;
+  color: var(--color-grey-lighter);
+  pointer-events: none;
+  transform-origin: left center;
+  transition: transform 250ms;
+  font-size: 1rem;
+}
+
+.mc-field-group input {
+  padding: .5rem;
+  padding-left: 3.75rem;
+  border-color: rgba(0, 0, 0, .2);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.375rem;
+  width: 100%;
+  transition: border-color 250ms;
+  font-family: var(--fonts);
+  font-size: 1rem;
+}
+
+.mc-field-group input:focus {
+  outline: none;
+  border-color: rgba(0, 0, 0, .4);
+}
+
+.mc-field-group input::placeholder {
+  color: transparent;
+}
+
+/* Hide Safari's autofill button */
+.mc-field-group input::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  pointer-events: none;
+  position: absolute;
+}
+
+.indicates-required {
+  font-size: .75rem;
+  font-style: italic;
+  opacity: .6;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  font-weight: normal;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  border-radius: 0.375rem;
+  border-color: rgba(0,0,0,.2);
+  border-width: 1px;
+  border-style: solid;
+  outline: none;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  background-color: var(--color-yellow);
+  color: var(--color-grey);
+}
+
+.button:hover { background-color: var(--color-yellow-lighter);}
+.button:active { background-color: var(--color-yellow-darker); }
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  /* Additional responsive adjustments */
+}
